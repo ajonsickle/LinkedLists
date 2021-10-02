@@ -8,12 +8,12 @@ namespace ConsoleApp1
     {
         private Object value;
         public Node next;
-        
+        // constructor
         public Node(Object value)
         {
             this.value = value;
         }
-
+        // getter and setter for value
         public Object getValue()
         {
             return value;

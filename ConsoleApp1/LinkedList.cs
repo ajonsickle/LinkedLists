@@ -8,15 +8,18 @@ namespace ConsoleApp1
     {
         private Node firstElement;
         private int length;
+        // getter for length
         public int getLength()
         {
             return length;
         }
+        // constructor
         public LinkedList()
         {
             length = 0;
             firstElement = null;
         }
+        // print all nodes in the list
         public void printAll()
         {
             Node x = firstElement;
@@ -30,6 +33,7 @@ namespace ConsoleApp1
             }
 
         }
+        // add new node to the end of the list 
         public void add(Object data)
         {
             Node a = new Node(data);
@@ -46,6 +50,7 @@ namespace ConsoleApp1
             length += 1;
 
         }
+        // delete node from list using data
         public void delete(Object data)
         {
             Node x = firstElement;
@@ -74,6 +79,7 @@ namespace ConsoleApp1
                 Console.WriteLine("Data not found");
             }
         }
+        // get node by position in list
         public Node getByIndex(int index)
         {
             Node x = firstElement;
