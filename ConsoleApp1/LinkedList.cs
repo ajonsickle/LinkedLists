@@ -34,7 +34,7 @@ namespace ConsoleApp1
 
         }
         // add new node to the end of the list 
-        public void add(Object data)
+        public void addToEnd(Object data)
         {
             Node a = new Node(data);
             Node x = firstElement;
@@ -49,6 +49,12 @@ namespace ConsoleApp1
             }
             length += 1;
 
+        }
+        public void addToStart(Object data)
+        {
+            Node x = new Node(data);
+            x.next = firstElement;
+            firstElement = x;
         }
         // delete node from list using data
         public void delete(Object data)
